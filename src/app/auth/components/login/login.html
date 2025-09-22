@@ -1,0 +1,32 @@
+<div class="login-container">
+  <!--LOGO-->
+  <div class="logo">
+    <mat-icon svgIcon="logo"></mat-icon>
+  </div>
+
+  <!--FORMULARIO-->
+  <form>
+    <!--CEDULA-->
+    <app-label text="Número de Cédula" [required] ="true"></app-label>
+    <app-input placeholder="Ingrese el número de cédula" type="text" formControlName="cedula"[required]="true"></app-input>
+
+    <!--CONTRASEÑA-->
+    <app-label text="Contraseña" [required] ="true"></app-label>
+    <app-input placeholder="Ingresa tu contraseña" type="password" formControlName="password" [required]="true">
+    </app-input>
+
+    <!--OLVIDASTE TU CONTRASEÑA-->
+    <div class="forgot-password">
+      <a>¿Olvidaste tu contraseña?</a>
+    </div>
+
+     <!--BOTON INICIAR SESION-->
+     <button matButton="" mat-raised-button color="primary" class="btn-login">
+      Iniciar Sesión
+    </button>
+   
+
+    <!--BOTÓN-->
+    <app-button label="Iniciar Sesión" type="filled"></app-button>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+<mat-nav-list class="container">
+  <div class="logo">
+    <mat-icon class="icon" svgIcon="logo"></mat-icon>
+  </div>
+  <div>
+    @for (menu of listMenu; track $index) {
+      <mat-list-item>
+        <a [routerLink]="menu.url">
+          <button mat-icon-button>
+            <mat-icon [svgIcon]="menu.icon"></mat-icon>
+            <span>{{menu.title}}</span>
+          </button>
+        </a>
+      </mat-list-item>
+    }
+  </div>
+  <div class="user">
+    <mat-icon class="icon" svgIcon="user"></mat-icon>
+    <p>ADMIN</p>
+    <button class="btn-close" matButton="filled">Cerrar Sesión</button>
+  </div>
+</mat-nav-list>

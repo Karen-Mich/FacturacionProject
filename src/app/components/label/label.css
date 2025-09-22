@@ -1,0 +1,10 @@
+.text {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .text span {
+    color: red;
+    margin-left: 0.25rem;
+  }
+  
